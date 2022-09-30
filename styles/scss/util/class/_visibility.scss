@@ -1,0 +1,99 @@
+@use '../../config/size';
+
+// Display
+.dp-block {
+  display: block;
+}
+
+.dp-inline-block {
+  display: inline-block;
+}
+
+.dp-flex {
+  display: flex;
+}
+
+.dp-inline-flex {
+  display: inline-flex;
+}
+
+.dp-inline {
+  display: inline;
+}
+
+.dp-grid {
+  display: grid;
+}
+
+.dp-inline-grid {
+  display: inline-grid;
+}
+
+.dp-flow-root {
+  display: flow-root;
+}
+
+.dp-none {
+  display: none;
+}
+
+.dp-table {
+  display: table;
+}
+
+.dp-inline-table {
+  display: inline-table;
+}
+
+.dp-initial {
+  display: initial;
+}
+
+.dp-inherit {
+  display: inherit;
+}
+
+@each $size, $screenWidth in size.screen() {
+  @media screen and (min-width: $screenWidth) {
+    // Display
+    .dp-#{$size}-block {
+      display: block;
+    }
+    .dp-#{$size}-inline-block {
+      display: inline-block;
+    }
+    .dp-#{$size}-flex {
+      display: flex;
+    }
+    .dp-#{$size}-inline-flex {
+      display: inline-flex;
+    }
+    .dp-#{$size}-inline {
+      display: inline;
+    }
+    .dp-#{$size}-grid {
+      display: grid;
+    }
+    .dp-#{$size}-inline-grid {
+      display: inline-grid;
+    }
+    .dp-#{$size}-flow-root {
+      display: flow-root;
+    }
+    .dp-#{$size}-none {
+      display: none;
+    }
+    .dp-#{$size}-table {
+      display: table;
+    }
+    .dp-#{$size}-inline-table {
+      display: inline-table;
+    }
+    .dp-#{$size}-initial {
+      display: initial;
+    }
+    .dp-#{$size}-inherit {
+      display: inherit;
+    }
+  }
+}

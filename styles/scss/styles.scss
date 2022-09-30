@@ -1,0 +1,55 @@
+@use "config/color";
+@use "config/size";
+@use "config/font";
+@import "jemxfw.all";
+@import "https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css";
+
+body {
+  background: linear-gradient(300deg, deepskyblue, darkviolet, blue);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+main {
+  min-height: 100vh;
+  color: #fff;
+}
+
+div#main-section {
+  background: rgba(0, 0, 0, 0.075);
+  backdrop-filter: blur(5px);
+  padding: 0.5rem 1rem;
+
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  textarea {
+    font-size: large;
+    width: 100%;
+    height: 100%;
+    min-height: 10rem;
+    resize: none;
+    padding: 0.5rem;
+
+    border-radius: 12px;
+
+    &#output-form {
+      cursor: pointer;
+      color: #fff;
+    }
+  }
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}

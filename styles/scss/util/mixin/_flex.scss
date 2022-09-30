@@ -1,0 +1,29 @@
+@mixin set( $wrap: true, $fd: true, $jc: true, $ac: true, $ai: true ) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: space-around;
+  align-items: stretch;
+
+  @if $wrap {
+    flex-wrap: wrap;
+    // Flex-wrap can be changed to nowrap with the following class.
+    &.nowrap {
+      flex-wrap: nowrap;
+    }
+  }
+
+  // If fd = true then flex-direction options are included.
+  @if $fd {
+    &.fd-rowr {
+      flex-direction: row-reverse
+    }
+    &.fd-col {
+      flex-direction: column
+    }
+    &.fd-colr {
+      flex-direction: column-reverse;
+    }
+  }
+
+}

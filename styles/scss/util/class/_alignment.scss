@@ -1,0 +1,553 @@
+@use '../../config/size';
+
+//Position
+.pos-relative {
+  position: relative !important;
+}
+
+.pos-absolute {
+  position: absolute !important;
+}
+
+.pos-fixed {
+  position: fixed !important;
+}
+
+.pos-sticky {
+  position: sticky !important;
+}
+
+.pos-static {
+  position: static !important;
+}
+
+//Float
+.float-left {
+  float: left !important;
+}
+
+.float-right {
+  float: right !important;
+}
+
+.float-none {
+  float: none !important;
+}
+
+.float-start {
+  float: start !important;
+}
+
+.float-end {
+  float: end !important;
+}
+
+.float-inherit {
+  float: inherit !important;
+}
+
+.float-initial {
+  float: initial !important;
+}
+
+.float-revert {
+  float: revert !important;
+}
+
+.float-unset {
+  float: unset !important;
+}
+
+// Justify Content
+.jc-center {
+  justify-content: center !important;
+}
+
+.jc-start {
+  justify-content: start !important;
+}
+
+.jc-end {
+  justify-content: end !important;
+}
+
+.jc-flex-start {
+  justify-content: flex-start !important;
+}
+
+.jc-flex-end {
+  justify-content: flex-end !important;
+}
+
+.jc-left {
+  justify-content: left !important;
+}
+
+.jc-right {
+  justify-content: right !important;
+}
+
+.jc-normal {
+  justify-content: normal !important;
+}
+
+.jc-space-between {
+  justify-content: space-between !important;
+}
+
+.jc-space-around {
+  justify-content: space-around !important;
+}
+
+.jc-space-evenly {
+  justify-content: space-evenly !important;
+}
+
+.jc-stretch {
+  justify-content: stretch !important;
+}
+
+.jc-inherit {
+  justify-content: inherit !important;
+}
+
+.jc-initial {
+  justify-content: initial !important;
+}
+
+.jc-revert {
+  justify-content: revert !important;
+}
+
+.jc-unset {
+  justify-content: unset !important;
+}
+
+// Align Items
+.ai-center {
+  align-items: center !important;
+}
+
+.ai-start {
+  align-items: start !important;
+}
+
+.ai-end {
+  align-items: end !important;
+}
+
+.ai-flex-start {
+  align-items: flex-start !important;
+}
+
+.ai-flex-end {
+  align-items: flex-end !important;
+}
+
+.ai-normal {
+  align-items: normal !important;
+}
+
+.ai-stretch {
+  align-items: stretch !important;
+}
+
+.ai-inherit {
+  align-items: inherit !important;
+}
+
+.ai-initial {
+  align-items: initial !important;
+}
+
+.ai-revert {
+  align-items: revert !important;
+}
+
+.ai-unset {
+  align-items: unset !important;
+}
+
+// Align Content
+.ac-center {
+  align-content: center !important;
+}
+
+.ac-start {
+  align-content: start !important;
+}
+
+.ac-end {
+  align-content: end !important;
+}
+
+.ac-flex-start {
+  align-content: flex-start !important;
+}
+
+.ac-flex-end {
+  align-content: flex-end !important;
+}
+
+.ac-normal {
+  align-content: normal !important;
+}
+
+.ac-space-between {
+  align-content: space-between !important;
+}
+
+.ac-space-around {
+  align-content: space-around !important;
+}
+
+.ac-space-evenly {
+  align-content: space-evenly !important;
+}
+
+.ac-stretch {
+  align-content: stretch !important;
+}
+
+.ac-inherit {
+  align-content: inherit !important;
+}
+
+.ac-initial {
+  align-content: initial !important;
+}
+
+.ac-revert {
+  align-content: revert !important;
+}
+
+.ac-unset {
+  align-content: unset !important;
+}
+
+// Flex Direction
+
+.fd-row {
+  flex-direction: row !important;
+}
+
+.fd-row-reverse {
+  flex-direction: row-reverse !important;
+}
+
+.fd-col {
+  flex-direction: column !important;
+}
+
+.fd-col-reverse {
+  flex-direction: column-reverse !important;
+}
+
+.fd-inherit {
+  flex-direction: inherit !important;
+}
+
+.fd-initial {
+  flex-direction: initial !important;
+}
+
+.fd-revert {
+  flex-direction: revert !important;
+}
+
+.fd-unset {
+  flex-direction: unset !important;
+}
+
+// Text Properties
+.text-align-center {
+  text-align: center !important;
+}
+
+.text-align-start {
+  text-align: start !important;
+}
+
+.text-align-end {
+  text-align: end !important;
+}
+
+.text-align-left {
+  text-align: left !important;
+}
+
+.text-align-right {
+  text-align: right !important;
+}
+
+.text-align-justify {
+  text-align: justify !important;
+}
+
+.text-align-justify-all {
+  text-align: justify-all !important;
+}
+
+.text-align-match-parent {
+  text-align: match-parent !important;
+}
+
+.text-align-inherit {
+  text-align: inherit !important;
+}
+
+.text-align-initial {
+  text-align: initial !important;
+}
+
+.text-align-revert {
+  text-align: revert !important;
+}
+
+.text-align-unset {
+  text-align: unset !important;
+}
+
+@each $size, $screenWidth in size.screen() {
+  @media screen and (min-width: $screenWidth) {
+    //Position
+    .pos-#{$size}-relative {
+      position: relative !important;
+    }
+    .pos-#{$size}-absolute {
+      position: absolute !important;
+    }
+    .pos-#{$size}-fixed {
+      position: fixed !important;
+    }
+    .pos-#{$size}-sticky {
+      position: sticky !important;
+    }
+    .pos-#{$size}-static {
+      position: static !important;
+    }
+
+    //Float
+    .float-#{$size}-left {
+      float: left !important;
+    }
+    .float-#{$size}-right {
+      float: right !important;
+    }
+    .float-#{$size}-none {
+      float: none !important;
+    }
+    .float-#{$size}-start {
+      float: start !important;
+    }
+    .float-#{$size}-end {
+      float: end !important;
+    }
+    .float-#{$size}-inherit {
+      float: inherit !important;
+    }
+    .float-#{$size}-initial {
+      float: initial !important;
+    }
+    .float-#{$size}-revert {
+      float: revert !important;
+    }
+    .float-#{$size}-unset {
+      float: unset !important;
+    }
+
+    // Justify Content
+    .jc-#{$size}-center {
+      justify-content: center !important;
+    }
+    .jc-#{$size}-start {
+      justify-content: start !important;
+    }
+    .jc-#{$size}-end {
+      justify-content: end !important;
+    }
+    .jc-#{$size}-flex-start {
+      justify-content: flex-start !important;
+    }
+    .jc-#{$size}-flex-end {
+      justify-content: flex-end !important;
+    }
+    .jc-#{$size}-left {
+      justify-content: left !important;
+    }
+    .jc-#{$size}-right {
+      justify-content: right !important;
+    }
+    .jc-#{$size}-normal {
+      justify-content: normal !important;
+    }
+    .jc-#{$size}-space-between {
+      justify-content: space-between !important;
+    }
+    .jc-#{$size}-space-around {
+      justify-content: space-around !important;
+    }
+    .jc-#{$size}-space-evenly {
+      justify-content: space-evenly !important;
+    }
+    .jc-#{$size}-stretch {
+      justify-content: stretch !important;
+    }
+    .jc-#{$size}-inherit {
+      justify-content: inherit !important;
+    }
+    .jc-#{$size}-initial {
+      justify-content: initial !important;
+    }
+    .jc-#{$size}-revert {
+      justify-content: revert !important;
+    }
+    .jc-#{$size}-unset {
+      justify-content: unset !important;
+    }
+
+    // Align Items
+    .ai-#{$size}-center {
+      align-items: center !important;
+    }
+    .ai-#{$size}-start {
+      align-items: start !important;
+    }
+    .ai-#{$size}-end {
+      align-items: end !important;
+    }
+    .ai-#{$size}-flex-start {
+      align-items: flex-start !important;
+    }
+    .ai-#{$size}-flex-end {
+      align-items: flex-end !important;
+    }
+    .ai-#{$size}-normal {
+      align-items: normal !important;
+    }
+    .ai-#{$size}-stretch {
+      align-items: stretch !important;
+    }
+    .ai-#{$size}-inherit {
+      align-items: inherit !important;
+    }
+    .ai-#{$size}-initial {
+      align-items: initial !important;
+    }
+    .ai-#{$size}-revert {
+      align-items: revert !important;
+    }
+    .ai-#{$size}-unset {
+      align-items: unset !important;
+    }
+
+    // Align Content
+    .ac-#{$size}-center {
+      align-content: center !important;
+    }
+    .ac-#{$size}-start {
+      align-content: start !important;
+    }
+    .ac-#{$size}-end {
+      align-content: end !important;
+    }
+    .ac-#{$size}-flex-start {
+      align-content: flex-start !important;
+    }
+    .ac-#{$size}-flex-end {
+      align-content: flex-end !important;
+    }
+    .ac-#{$size}-normal {
+      align-content: normal !important;
+    }
+    .ac-#{$size}-space-between {
+      align-content: space-between !important;
+    }
+    .ac-#{$size}-space-around {
+      align-content: space-around !important;
+    }
+    .ac-#{$size}-space-evenly {
+      align-content: space-evenly !important;
+    }
+    .ac-#{$size}-stretch {
+      align-content: stretch !important;
+    }
+    .ac-#{$size}-inherit {
+      align-content: inherit !important;
+    }
+    .ac-#{$size}-initial {
+      align-content: initial !important;
+    }
+    .ac-#{$size}-revert {
+      align-content: revert !important;
+    }
+    .ac-#{$size}-unset {
+      align-content: unset !important;
+    }
+
+    // Flex Direction
+
+    .fd-#{$size}-row {
+      flex-direction: row !important;
+    }
+    .fd-#{$size}-row-reverse {
+      flex-direction: row-reverse !important;
+    }
+    .fd-#{$size}-col {
+      flex-direction: column !important;
+    }
+    .fd-#{$size}-col-reverse {
+      flex-direction: column-reverse !important;
+    }
+    .fd-#{$size}-inherit {
+      flex-direction: inherit !important;
+    }
+    .fd-#{$size}-initial {
+      flex-direction: initial !important;
+    }
+    .fd-#{$size}-revert {
+      flex-direction: revert !important;
+    }
+    .fd-#{$size}-unset {
+      flex-direction: unset !important;
+    }
+
+    // Text Properties
+    .text-#{$size}-align-center {
+      text-align: center !important;
+    }
+    .text-#{$size}-align-start {
+      text-align: start !important;
+    }
+    .text-#{$size}-align-end {
+      text-align: end !important;
+    }
+    .text-#{$size}-align-left {
+      text-align: left !important;
+    }
+    .text-#{$size}-align-right {
+      text-align: right !important;
+    }
+    .text-#{$size}-align-justify {
+      text-align: justify !important;
+    }
+    .text-#{$size}-align-justify-all {
+      text-align: justify-all !important;
+    }
+    .text-#{$size}-align-match-parent {
+      text-align: match-parent !important;
+    }
+    .text-#{$size}-align-inherit {
+      text-align: inherit !important;
+    }
+    .text-#{$size}-align-initial {
+      text-align: initial !important;
+    }
+    .text-#{$size}-align-revert {
+      text-align: revert !important;
+    }
+    .text-#{$size}-align-unset {
+      text-align: unset !important;
+    }
+  }
+}
