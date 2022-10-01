@@ -12,3 +12,4 @@
 
 [https://mc-font-converter.vertcode.dev/](https://mc-font-converter.vertcode.dev/)
 ![Video](/resources/example.gif)
+![Screenshot](/resources/screenshot.png)
