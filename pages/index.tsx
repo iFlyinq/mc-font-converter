@@ -5,7 +5,7 @@ import {BaseSyntheticEvent} from "react";
 
 const Home: NextPage = () => {
 
-    const fontLetters = "ᴀʙᴄᴅᴇꜰɢʜɪᴊᴋʟᴍɴᴏᴘQʀꜱᴛᴜᴠᴡxʏᴢ";
+    const fontLetters = "ᴀʙᴄᴅᴇꜰɢʜɪᴊᴋʟᴍɴᴏᴘꞯʀꜱᴛᴜᴠᴡxʏᴢ";
     const normalLetters = "abcdefghijklmnopqrstuvwxyz";
 
     function handleInput(event: BaseSyntheticEvent) {
